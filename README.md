@@ -7,10 +7,14 @@ A data analytics project focused on Indian mutual funds. The project combines hi
 ## Project Structure
 
 mutual-fund-analytics/
-
 ├── 📁 dashboard
 ├── 📁 data
+│   ├── 📁 db
+│   │   └── 📄 bluestock_mf.db
 │   ├── 📁 processed
+│   │   ├── 📄 investor_transactions_clean.csv
+│   │   ├── 📄 nav_history_clean.csv
+│   │   └── 📄 scheme_performance_clean.csv
 │   └── 📁 raw
 │       ├── 📄 01_fund_master.csv
 │       ├── 📄 02_nav_history.csv
@@ -29,14 +33,18 @@ mutual-fund-analytics/
 │       ├── 📄 Nippon_Large_Cap.csv
 │       └── 📄 SBI_Bluechip.csv
 ├── 📁 notebooks
+│   ├── 📄 01_data_ingestion.ipynb
+│   └── 📄 02_data_cleaning.ipynb
 ├── 📁 reports
+├── 📁 scripts
+│   ├── 🐍 live_nav_fetch.py
+│   └── 🐍 load_to_sqlite.py
 ├── 📁 sql
+│   ├── 📄 queries.sql
+│   └── 📄 schema.sql
 ├── ⚙️ .gitignore
 ├── 📝 README.md
-├── 🐍 amfi_validation.py
-├── 🐍 data_ingestion.py
-├── 🐍 explore_fund_master.py
-├── 🐍 live_nav_fetch.py
+├── 📝 data_dictionary.md
 └── 📄 requirements.txt
 
 ## Technologies Used
@@ -60,14 +68,3 @@ git clone <repository-url>
 Install dependencies:
 pip install -r requirements.txt
 
-Run data ingestion:
-python data_ingestion.py
-
-Run NAV fetch:
-python live_nav_fetch.py
-
-Explore fund master metadata:
-python explore_fund_master.py
-
-Validate AMFI codes:
-python amfi_validation.py
