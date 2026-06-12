@@ -15,6 +15,7 @@ End-to-end mutual fund analytics platform built using Python, SQLite, Power BI a
 
 ## Project Structure
 bluestone_mf_capstone
+```
 ├── dashboard
 │   ├── screenshots
 │   │   ├── page1_industry_overview.png
@@ -97,6 +98,7 @@ bluestone_mf_capstone
 ├── README.md
 ├── data_dictionary.md
 └── requirements.txt
+```
 
 ## Data Sources
 
